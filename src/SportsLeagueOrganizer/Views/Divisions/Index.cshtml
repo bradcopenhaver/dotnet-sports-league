@@ -1,0 +1,17 @@
+﻿@model IEnumerable<SportsLeagueOrganizer.Models.Division>
+
+@{
+    ViewData["Title"] = "Divisions";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Divisions</h2>
+<hr />
+
+@foreach (var division in Model)
+{
+    <p>
+        @Html.DisplayFor(modelDivision => division.Name) -
+        @Html.DisplayFor(modelDivision => division.SkillLevel)
+    </p>
+
+}

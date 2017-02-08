@@ -11,6 +11,7 @@ namespace SportsLeagueOrganizer.Models
         public virtual DbSet<Division> Divisions { get; set; }
         public virtual DbSet<Team> Teams { get; set; }
         public virtual DbSet<Player> Players { get; set; }
+        public virtual DbSet<Sport> Sports { get; set; }
         public virtual DbSet<Affiliation> Affiliations { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)

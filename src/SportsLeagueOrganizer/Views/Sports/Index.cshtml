@@ -1,0 +1,13 @@
+﻿@model IEnumerable<SportsLeagueOrganizer.Models.Sport>
+
+@{
+    ViewData["Title"] = "Sports";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Play a Sport</h2>
+<hr />
+
+@foreach (var sport in Model)
+{
+    @Html.DisplayFor(modelSport => sport.Name)<br />
+}

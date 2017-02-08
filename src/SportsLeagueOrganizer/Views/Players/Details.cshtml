@@ -1,0 +1,17 @@
+﻿@model SportsLeagueOrganizer.Models.Player
+
+@{
+    ViewData["Title"] = "Player Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>Player Details</h2>
+<hr />
+
+<p>
+    @Html.DisplayFor(model => model.Name) -
+    @Html.DisplayFor(model => model.Phone) | 
+    
+    @Html.DropDownList("playerTeams")
+    
+    @Html.ActionLink("Player Details", "Details")
+</p>
