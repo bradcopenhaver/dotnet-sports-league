@@ -30,6 +30,7 @@ namespace SportsLeagueOrganizer.Controllers
                     .ToList();
 
                 ViewBag.playerTeams = new SelectList(teams, "TeamId", "TeamId");
+                ViewBag.welcomemessage = "Hello!";
                 return View(thisPlayer);
 
             }
